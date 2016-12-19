@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="34o-tt-AoQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="34o-tt-AoQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -151,7 +151,13 @@
                             <outletCollection property="gestureRecognizers" destination="kd1-iI-YXc" appends="YES" id="oOb-GL-yko"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="Wmz-qX-BO4"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="Wmz-qX-BO4">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="fow-5m-Oa0">
+                            <connections>
+                                <segue destination="jbe-Qc-oPr" kind="push" id="Rsh-ji-wDe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="7ko-U3-ZqP" id="dSH-5a-82V"/>
                         <outlet property="tipControl" destination="vg4-3r-GYw" id="IRg-Zz-c5t"/>
@@ -170,11 +176,27 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="342.5" y="218.5"/>
+            <point key="canvasLocation" x="929.5" y="218.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="35I-tI-5RG">
+            <objects>
+                <viewController id="jbe-Qc-oPr" customClass="SettingsViewController" customModule="TipTop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SD4-xo-xKe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1y3-Vb-oM0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXk-2g-tJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="219"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Td-xP-1rJ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TI9-Xj-Ex8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="34o-tt-AoQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QMV-kj-YRs">
@@ -183,12 +205,30 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hLY-Ja-lJy"/>
+                        <segue destination="ofF-oz-V4D" kind="relationship" relationship="rootViewController" id="hLY-Ja-lJy"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TI9-Xj-Ex8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-244.5" y="218.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ACZ-F3-9iL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chs-EU-glS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ofF-oz-V4D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GUe-Si-Noe"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HSg-hO-Y5o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dKw-rC-ItR"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="342.5" y="218.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

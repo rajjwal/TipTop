@@ -14,6 +14,7 @@
 		DD4462081DFDE54D00E0FDDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4462061DFDE54D00E0FDDB /* LaunchScreen.storyboard */; };
 		DD4462131DFDE54D00E0FDDB /* TipTopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4462121DFDE54D00E0FDDB /* TipTopTests.swift */; };
 		DD44621E1DFDE54D00E0FDDB /* TipTopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44621D1DFDE54D00E0FDDB /* TipTopUITests.swift */; };
+		DDF901161E064D170035C5F8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF901151E064D170035C5F8 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DD4462191DFDE54D00E0FDDB /* TipTopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipTopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD44621D1DFDE54D00E0FDDB /* TipTopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTopUITests.swift; sourceTree = "<group>"; };
 		DD44621F1DFDE54D00E0FDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF901151E064D170035C5F8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				DD4461FD1DFDE54D00E0FDDB /* AppDelegate.swift */,
 				DD4461FF1DFDE54D00E0FDDB /* ViewController.swift */,
 				DD4462011DFDE54D00E0FDDB /* Main.storyboard */,
+				DDF901151E064D170035C5F8 /* SettingsViewController.swift */,
 				DD4462041DFDE54D00E0FDDB /* Assets.xcassets */,
 				DD4462061DFDE54D00E0FDDB /* LaunchScreen.storyboard */,
 				DD4462091DFDE54D00E0FDDB /* Info.plist */,
@@ -188,7 +191,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Rajjwal Rawal";
 				TargetAttributes = {
 					DD4461F91DFDE54D00E0FDDB = {
@@ -261,6 +264,7 @@
 			files = (
 				DD4462001DFDE54D00E0FDDB /* ViewController.swift in Sources */,
 				DD4461FE1DFDE54D00E0FDDB /* AppDelegate.swift in Sources */,
+				DDF901161E064D170035C5F8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				DD4462241DFDE54D00E0FDDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD4462251DFDE54E00E0FDDB /* Build configuration list for PBXNativeTarget "TipTopTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				DD4462271DFDE54E00E0FDDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD4462281DFDE54E00E0FDDB /* Build configuration list for PBXNativeTarget "TipTopUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				DD44622A1DFDE54E00E0FDDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
