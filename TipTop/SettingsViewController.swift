@@ -2,7 +2,7 @@
 //  SettingsViewController.swift
 //  TipTop
 //
-//  Created by Rajjwal Rawal on 12/18/16.
+//  Created by Rajjwal Rawal on 12/26/16.
 //  Copyright © 2016 Rajjwal Rawal. All rights reserved.
 //
 
